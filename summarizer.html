@@ -1,0 +1,48 @@
+<div class="col-5 text-start">
+    <p class="mb-2 color">Prompt</p>
+    <textarea name="" id="summarizePromptArea" rows="10" class="form-control mb-3"
+        placeholder="Type what you want to Summarize..."></textarea>
+
+    <div class="row g-2 mt-4">
+        <div class="col-3 dropdown d-grid">
+            <span class="color">Type</span>
+            <button class="btn btn-sm dropdown-toggle color mt-2" style="background-color: #1e1e1e" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false" id="summarizeTypeBtn">
+                <span name="key-points" id="summarizeTypeSpan">Key Points</span>
+            </button>
+            <ul class="dropdown-menu" id="summarizeTypeDropdown">
+            </ul>
+        </div>
+        <div class="col-3 dropdown d-grid">
+            <span  class="color">Format</span>
+            <button class="btn btn-sm dropdown-toggle color mt-2" style="background-color: #1e1e1e" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false" id="summarizeFormatBtn">
+                <span name="markdown" id="summarizeFormatSpan">Markdown</span>
+            </button>
+            <ul class="dropdown-menu" id="summarizeFormatDropdown">
+            </ul>
+        </div>
+        <div class="col-3 dropdown d-grid">
+            <span  class="color">Length</span>
+            <button class="btn btn-sm dropdown-toggle color mt-2" style="background-color: #1e1e1e" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false" id="summarizeLengthBtn">
+                <span name="short" id="summarizeLengthSpan">Short</span>
+            </button>
+            <ul class="dropdown-menu" id="summarizeLengthDropdown">
+            </ul>
+        </div>
+
+        <div class="col-3 d-grid">
+            <span>&nbsp;</span>
+            <button class="btn button4 btn-sm color" style="background-color: #1e1e1e" type="button"
+                onclick="aiSummarize();">
+                Summarize
+            </button>
+        </div>
+    </div>
+</div>
+<div class="col-5 text-start" style="height: 400px">
+    <p class="mb-2 color">Summarization</p>
+    <textarea name="" id="summarizeResultArea" rows="11" class="form-control mb-3" style="height: 338px"
+        placeholder=""></textarea>
+</div>

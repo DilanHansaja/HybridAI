@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hybride Ai</title>
+</head>
+
+<body class="background_color" style="background-color: #121212;" onload="loadDesign('chat');">
+    <div class="container-fluid ">
+        <div class="row vh-100 justify-content-center align-items-center ">
+            <div class="col-12  text-center">
+                <h3 class="color" style="font-family:'Verdana';">Hybrid-AI</h3>
+
+                <p class="color my-3">"Experience the power of AI with Hybrid-AI. Summarize, translate, create, and
+                    improve content easily—all in one place."
+                </p>
+
+                <div class="row g-2 mt-3 justify-content-center">
+                    <div class="col-2 d-grid">
+                        <button class="btn button1" onclick="loadDesign('chat');"><i class="bi bi-robot"></i> Chat
+                            with AI</button>
+                    </div>
+                    <div class="col-2 d-grid">
+                        <button class=" btn button5" onclick="loadDesign('summarizer');"><i
+                                class="bi bi-card-text"></i> AI Summarizer</button>
+                    </div>
+                    <div class="col-2 d-grid">
+                        <button class="btn button4" onclick="loadDesign('translator');"><i
+                                class="bi bi-translate"></i> AI
+                            Translator</button>
+                    </div>
+                    <!-- <div class="col-2 d-grid">
+                        <button class="btn button4" onclick="loadDesign('writer');"><i class="bi bi-lightbulb"></i> AI Writer</button>
+                    </div>
+                    <div class="col-2 d-grid">
+                        <button class="btn button5"><i class="bi bi-pen"></i> AI Rewriter</button>
+                    </div> -->
+
+                </div>
+                <!-- container -->
+                <div class="row justify-content-center mt-5" id="containerDiv">
+
+                    <div class="col-10 pb-5 " style="max-height: 350px; min-height: 350px; overflow: auto;">
+
+
+                        <div class="row g-2 mb-2">
+                            <div class="py-2 px-3 rounded-2 color text-start" style="background-color:#2A2A2A; width: auto;max-width: 400px;">
+                                What do you want to know ?
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr class="mt-2 text-light col-10">
+                    <div class="col-8">
+                        <input type="text" class="form-control rounded-5" placeholder="Type anything you like to ask?">
+                    </div>
+                    <div class="col-1">
+                        <div class="row circle align-items-center justify-content-center" onclick="prompt();">
+                            <i class="bi bi-arrow-right text-dark"></i>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- container -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

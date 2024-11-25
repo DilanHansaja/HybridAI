@@ -1,0 +1,47 @@
+<div class="col-5 text-start">
+    <div class="dropdown">
+        <button class="btn dropdown-toggle color" style="background-color: #1e1e1e" type="button"
+            data-bs-toggle="dropdown" aria-expanded="false" id="autoDetectBtn">
+            <span id="detectSpan" name="detect">Detect Language</span>
+        </button>
+        <ul class="dropdown-menu">
+            <!-- Search Input -->
+            <li>
+                <input type="text" class="form-control-sm" placeholder="Search..." />
+            </li>
+            <div class="mt-2" style="max-height: 200px; overflow-y: auto" id="detectLanguageDropdown">
+                <li class="dropdown-item curserPointer" onclick="setLanguage('detect','Detect Language','detect')">
+                    Detect Language
+                </li>
+            </div>
+        </ul>
+    </div>
+</div>
+
+<div class="col-5 text-start">
+    <div class="dropdown">
+        <button class="btn dropdown-toggle color" style="background-color: #1e1e1e" type="button"
+            data-bs-toggle="dropdown" aria-expanded="false" id="targetBtn">
+            <span id="targetSpan" name="select">Select Language</span>
+        </button>
+        <ul class="dropdown-menu">
+            <!-- Search Input -->
+            <li>
+                <input type="text" class="form-control-sm" placeholder="Search..." />
+            </li>
+            <div class="mt-2" style="max-height: 200px; overflow-y: auto" id="targetLanguageDropdown">
+                <li class="dropdown-item curserPointer" onclick="setLanguage('detect','Select Language','target')">
+                    Select Language
+                </li>
+            </div>
+        </ul>
+    </div>
+</div>
+
+<div class="col-5 mt-2">
+    <!-- <input type="text" class="form-control d-grid input_bg_color" placeholder="Type what you want to summerise..." > -->
+    <textarea name="" id="userTextArea" rows="14" class="form-control newArea" placeholder="Type what you want to Translate..." onkeyup="aiTranslate();"></textarea>
+</div>
+<div class="col-5 mt-2">
+    <textarea name="" id="translationArea" rows="14" class="form-control"></textarea>
+</div>

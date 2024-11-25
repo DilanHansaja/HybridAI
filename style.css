@@ -1,0 +1,94 @@
+.background_color{
+background: "#121212";
+}
+
+.input_bg_color{
+background: #1E1E1E;
+}
+.color{
+    color: #E0E0E0;
+}
+
+.button1{
+    border-style: solid;
+    border-color: #333333;
+    border-width: 2px;
+    color: #BB86FC;
+}
+.button1:hover {
+    background: linear-gradient(135deg, #4A90E2, #1C78D4);
+    color: #FFF;
+  }
+.button2{
+    border-style: solid;
+    border-color: #333333;
+    border-width: 2px;
+    color:#4A90E2;
+}
+.button2:hover {
+    background: linear-gradient(135deg, #00D1D1, #009E9E);
+    color: #FFF;
+  }
+.button3{
+    border-style: solid;
+    border-color: #333333;
+    border-width: 2px;
+    color:#FF8C42;
+}
+
+.button3:hover {
+    background: linear-gradient(135deg, #FF8C42, #E67C33);
+    color: #FFF;
+  }
+.button4{
+    border-style: solid;
+    border-color: #333333;
+    border-width: 2px;
+    color:#4CAF50;
+}
+.button4:hover {
+    background: linear-gradient(135deg, #4CAF50, #388E3C);
+    color: #FFF;
+  }
+.button5{
+    border-style: solid;
+    border-color: #333333;
+    border-width: 2px;
+    color:#FF5370;
+}
+.button5:hover {
+    background: linear-gradient(135deg, #FF5370, #D32F45);
+    color: #FFF;
+}
+
+.curserPointer{
+    cursor: pointer;
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #BB86FC;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  /* Targeting the entire scrollbar */
+::-webkit-scrollbar {
+    width: 8px;  /* Width of the scrollbar */
+}
+/* Targeting the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background-color: #4d4a4a;  /* Color of the scrollbar thumb */
+    border-radius: 10px;         /* Optional: Rounded edges */
+}
+::-webkit-scrollbar-thumb:hover {
+   cursor: pointer;
+}
+/* Optional: Target the scrollbar track (the background) */
+::-webkit-scrollbar-track {
+    background-color:#dadada;  /* Color of the track */
+    border-radius: 10px;   
+}
