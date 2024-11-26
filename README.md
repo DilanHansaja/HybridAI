@@ -33,7 +33,7 @@
             <pre style="background: #f4f4f4; padding: 10px; border: 1px solid #ddd; border-radius: 5px; overflow-x: auto;"><code>git clone https://github.com/DilanHansaja/HybridAi.git</code>code></pre>
         </li>
         <li>Navigate to the project folder:
-            <pre style="background: #f4f4f4; padding: 10px; border: 1px solid #ddd; border-radius: 5px; overflow-x: auto;"><code>cd HybridAi</code>code></pre>
+            <pre style="background: #f4f4f4; padding: 10px; border: 1px solid #ddd; border-radius: 5px; overflow-x: auto;"><code>cd HybridAi</code></pre>
         </li>
         <li>Open <code>index.html</code> in a web browser to launch the app.</li>
     </ol>
