@@ -30,7 +30,7 @@
     <h2 id="installation" style="color: #34495e; border-bottom: 2px solid #ddd; padding-bottom: 5px;">Installation</h2>
     <ol style="margin-left: 20px;">
         <li>Clone the repository:
-            <pre style="background: #f4f4f4; padding: 10px; border: 1px solid #ddd; border-radius: 5px; overflow-x: auto;"><code>git clone https://github.com/DilanHansaja/HybridAi.git</code>code></pre>
+            <pre style="background: #f4f4f4; padding: 10px; border: 1px solid #ddd; border-radius: 5px; overflow-x: auto;"><code>git clone https://github.com/DilanHansaja/HybridAi.git</code></pre>
         </li>
         <li>Navigate to the project folder:
             <pre style="background: #f4f4f4; padding: 10px; border: 1px solid #ddd; border-radius: 5px; overflow-x: auto;"><code>cd HybridAi</code></pre>
