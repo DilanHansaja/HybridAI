@@ -9,6 +9,7 @@
         <li><a href="#overview" style="color: #2980b9; text-decoration: none;">Overview</a></li>
         <li><a href="#features" style="color: #2980b9; text-decoration: none;">Features</a></li>
         <li><a href="#technologies-used" style="color: #2980b9; text-decoration: none;">Technologies Used</a></li>
+         <li><a href="#prerequisites" style="color: #2980b9; text-decoration: none;">Prerequisites</a></li>
          <li><a href="#demo" style="color: #2980b9; text-decoration: none;">Live Demo</a></li>
         <li><a href="#installation" style="color: #2980b9; text-decoration: none;">Installation</a></li>
         <li><a href="#usage" style="color: #2980b9; text-decoration: none;">Usage</a></li>
@@ -28,6 +29,16 @@
         <li><strong>Libraries:</strong> Bootstrap for styling</li>
         <li><strong>AI APIs:</strong> Integrated APIs for NLP functionalities</li>
     </ul>
+    <h2 id="prerequisites" style="font-family: Arial, sans-serif; color: #333;">Prerequisites</h2>
+<p style="font-family: Arial, sans-serif; color: #555; line-height: 1.6;">
+    To run this application, you may need to meet certain requirements. Please review the 
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZXeiwj9KO9jMctffHPym88ln12xNWCrVkMY_u06WfSTulQg/viewform?resourcekey=0-dE0Rqy_GYXDEWSnU7Z0iHg" 
+       target="_blank" 
+       style="color: #1a73e8; text-decoration: none;">
+        Google Chrome Built-in AI - Early Preview Program
+    </a> 
+    to view the prerequisites.
+</p>
     <div style="font-family: Arial, sans-serif; margin-top: 20px;">
     <h2 id="demo" style="color: #2980b9; font-size: 1.4em; margin-bottom: 10px;">Live Demo</h2>
     <p style="font-size: 1.1em; line-height: 1.5; margin-bottom: 10px;">
