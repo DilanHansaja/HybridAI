@@ -355,12 +355,12 @@ async function prompt() {
   var inputdiv_2 = document.createElement("div");
   inputdiv_2.classList.add("py-2", "px-3", "rounded-2", "color", "text-end");
   inputdiv_2.style.cssText = "background-color: #2A2A2A; width: auto; max-width: 400px;";
-  inputdiv_2.innerHTML=promptInput;
+  inputdiv_2.innerHTML = promptInput;
 
   inputdiv_1.appendChild(inputdiv_2);
   promptMainDiv.append(inputdiv_1);
 
-  document.getElementById("promptInput").value="";
+  document.getElementById("promptInput").value = "";
 
   const { available, defaultTemperature, defaultTopK, maxTopK } = await ai.languageModel.capabilities();
 
@@ -375,7 +375,7 @@ async function prompt() {
 
     var subdiv_2 = document.createElement("div");
     subdiv_2.classList.add("py-2", "px-3", "rounded-2", "color", "text-start");
-    subdiv_2.id = "subDIv2"+divId;
+    subdiv_2.id = "subDIv2" + divId;
     subdiv_2.style.cssText = "background-color: #2A2A2A; width: auto; max-width: 400px;";
 
     subdiv_1.append(subdiv_2);
@@ -394,7 +394,7 @@ async function prompt() {
 
       const appendLetter = () => {
         if (index < result.length) {
-          document.getElementById("subDIv2"+divId).textContent += result[index];
+          document.getElementById("subDIv2" + divId).textContent += result[index];
           index++;
         } else {
           clearInterval(timer);
@@ -413,12 +413,50 @@ async function prompt() {
 
 }
 
-function chatPageInit(){
+function chatPageInit() {
   document.getElementById("promptInput").addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
-        prompt();
-        event.preventDefault();
+      prompt();
+      event.preventDefault();
     }
-});
+  });
+}
+
+function copyFromDiv(divId) {
+
+  const textToCopy = document.getElementById(divId).value;
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(textToCopy)
+      .then(() => alert('Text successfully copied to clipboard!'))
+      .catch(err => {
+        console.error('Clipboard API failed:', err);
+        alert('Failed to copy text. Trying fallback...');
+
+      });
+  }
+}
+
+function clearPrompt(id) {
+
+  document.getElementById(id).value = "";
+
+}
+
+function pasteText(id, btn) {
+
+  let pasteButton = document.getElementById(btn);
+  let textArea = document.getElementById(id);
+
+  pasteButton.addEventListener('click', async () => {
+    try {
+      const text = await navigator.clipboard.readText();
+      textArea.value = text; // Paste the text into the textarea
+    } catch (error) {
+      alert('Failed to paste text. Ensure clipboard permissions are enabled.');
+      console.error('Error:', error);
+    }
+  });
+
 }
 

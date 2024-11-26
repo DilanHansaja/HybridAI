@@ -1,10 +1,26 @@
-<div class="col-5 text-start">
-    <p class="mb-2 color">Prompt</p>
-    <textarea name="" id="summarizePromptArea" rows="10" class="form-control mb-3"
-        placeholder="Type what you want to Summarize..."></textarea>
+<div class="col-11 col-md-8 col-lg-5 text-start">
+    <div class="row">
+        <div class="col-12">
+           <div class="row">
+            <div class="col-10">
+                <p class="mb-2 color">Prompt</p>
+            </div>
+            <div class="col-1 text-end">
+                <i class="bi bi-clipboard2-plus copyIcon"  title="paste" id="pasteButton1" onclick="pasteText('summarizePromptArea','pasteButton1');"></i>
+            </div>
+            <div class="col-1">
+                <i class="bi bi-arrow-clockwise copyIcon" title="clear" onclick="clearPrompt('summarizePromptArea');" ></i>
+            </div>
+           </div>
+        </div>
+        <div class="col-12">
+            <textarea name="" id="summarizePromptArea" rows="10" class="form-control mb-3"
+            placeholder="Type what you want to Summarize..."></textarea>
+        </div>
+    </div>
 
     <div class="row g-2 mt-4">
-        <div class="col-3 dropdown d-grid">
+        <div class="col-4 col-md-3 col-lg-3 dropdown d-grid">
             <span class="color">Type</span>
             <button class="btn btn-sm dropdown-toggle color mt-2" style="background-color: #1e1e1e" type="button"
                 data-bs-toggle="dropdown" aria-expanded="false" id="summarizeTypeBtn">
@@ -13,8 +29,8 @@
             <ul class="dropdown-menu" id="summarizeTypeDropdown">
             </ul>
         </div>
-        <div class="col-3 dropdown d-grid">
-            <span  class="color">Format</span>
+        <div class="col-4 col-md-3 col-lg-3 dropdown d-grid">
+            <span class="color">Format</span>
             <button class="btn btn-sm dropdown-toggle color mt-2" style="background-color: #1e1e1e" type="button"
                 data-bs-toggle="dropdown" aria-expanded="false" id="summarizeFormatBtn">
                 <span name="markdown" id="summarizeFormatSpan">Markdown</span>
@@ -22,8 +38,8 @@
             <ul class="dropdown-menu" id="summarizeFormatDropdown">
             </ul>
         </div>
-        <div class="col-3 dropdown d-grid">
-            <span  class="color">Length</span>
+        <div class="col-4 col-md-3 col-lg-3 dropdown d-grid">
+            <span class="color">Length</span>
             <button class="btn btn-sm dropdown-toggle color mt-2" style="background-color: #1e1e1e" type="button"
                 data-bs-toggle="dropdown" aria-expanded="false" id="summarizeLengthBtn">
                 <span name="short" id="summarizeLengthSpan">Short</span>
@@ -32,7 +48,7 @@
             </ul>
         </div>
 
-        <div class="col-3 d-grid">
+        <div class="col-12 col-md-3 col-lg-3 d-grid">
             <span>&nbsp;</span>
             <button class="btn button4 btn-sm color" style="background-color: #1e1e1e" type="button"
                 onclick="aiSummarize();">
@@ -41,8 +57,21 @@
         </div>
     </div>
 </div>
-<div class="col-5 text-start" style="height: 400px">
-    <p class="mb-2 color">Summarization</p>
-    <textarea name="" id="summarizeResultArea" rows="11" class="form-control mb-3" style="height: 338px"
-        placeholder=""></textarea>
+<div class="col-11 col-md-8 col-lg-5 mt-3 mt-lg-0 text-start" style="height: 400px">
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-11">
+                    <p class="mb-2 color">Summarization</p>
+                </div>
+                <div class="col-1">
+                    <i class="bi bi-copy copyIcon" title="copy" onclick="copyFromDiv('summarizeResultArea');"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <textarea name="" id="summarizeResultArea" rows="11" class="form-control mb-3" style="height: 338px"
+                placeholder=""></textarea>
+        </div>
+    </div>
 </div>

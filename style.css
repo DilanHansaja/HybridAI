@@ -92,3 +92,12 @@ background: #1E1E1E;
     background-color:#dadada;  /* Color of the track */
     border-radius: 10px;   
 }
+
+.copyIcon{
+    color: #b9b7b7;
+    cursor: pointer;
+}
+.copyIcon:hover{
+    color: #fdfdfd;
+    cursor: pointer;
+}

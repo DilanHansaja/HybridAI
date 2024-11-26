@@ -1,47 +1,70 @@
-<div class="col-5 text-start">
-    <div class="dropdown">
-        <button class="btn dropdown-toggle color" style="background-color: #1e1e1e" type="button"
-            data-bs-toggle="dropdown" aria-expanded="false" id="autoDetectBtn">
-            <span id="detectSpan" name="detect">Detect Language</span>
-        </button>
-        <ul class="dropdown-menu">
-            <!-- Search Input -->
-            <li>
-                <input type="text" class="form-control-sm" placeholder="Search..." />
-            </li>
-            <div class="mt-2" style="max-height: 200px; overflow-y: auto" id="detectLanguageDropdown">
-                <li class="dropdown-item curserPointer" onclick="setLanguage('detect','Detect Language','detect')">
-                    Detect Language
-                </li>
+<div class="col-11 col-md-8 col-lg-5  text-start">
+    <div class="row align-items-center">
+        <div class="col-10">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle color" style="background-color: #1e1e1e" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false" id="autoDetectBtn">
+                    <span id="detectSpan" name="detect">Detect Language</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <!-- Search Input -->
+                    <li>
+                        <input type="text" class="form-control-sm" placeholder="Search..." />
+                    </li>
+                    <div class="mt-lg-2" style="max-height: 200px; overflow-y: auto" id="detectLanguageDropdown">
+                        <li class="dropdown-item curserPointer"
+                            onclick="setLanguage('detect','Detect Language','detect')">
+                            Detect Language
+                        </li>
+                    </div>
+                </ul>
             </div>
-        </ul>
+        </div>
+        <div class="col-1 text-end">
+            <i class="bi bi-clipboard2-plus copyIcon" title="paste" id="pasteButton2"
+                onclick="pasteText('userTextArea','pasteButton2');"></i>
+        </div>
+        <div class="col-1">
+            <i class="bi bi-arrow-clockwise copyIcon" title="clear" onclick="clearPrompt('userTextArea');"></i>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-12 mt-2">
+        <!-- <input type="text" class="form-control d-grid input_bg_color" placeholder="Type what you want to summerise..." > -->
+        <textarea name="" id="userTextArea" rows="14" class="form-control newArea"
+            placeholder="Type what you want to Translate..." onkeyup="aiTranslate();"></textarea>
     </div>
 </div>
 
-<div class="col-5 text-start">
-    <div class="dropdown">
-        <button class="btn dropdown-toggle color" style="background-color: #1e1e1e" type="button"
-            data-bs-toggle="dropdown" aria-expanded="false" id="targetBtn">
-            <span id="targetSpan" name="select">Select Language</span>
-        </button>
-        <ul class="dropdown-menu">
-            <!-- Search Input -->
-            <li>
-                <input type="text" class="form-control-sm" placeholder="Search..." />
-            </li>
-            <div class="mt-2" style="max-height: 200px; overflow-y: auto" id="targetLanguageDropdown">
-                <li class="dropdown-item curserPointer" onclick="setLanguage('detect','Select Language','target')">
-                    Select Language
-                </li>
+<div class="col-11 col-md-8 col-lg-5 text-start mt-3 mt-lg-0">
+    <div class="row align-items-center">
+        <div class="col-11">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle color" style="background-color: #1e1e1e" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false" id="targetBtn">
+                    <span id="targetSpan" name="select">Select Language</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <!-- Search Input -->
+                    <li>
+                        <input type="text" class="form-control-sm" placeholder="Search..." />
+                    </li>
+                    <div class="mt-2" style="max-height: 200px; overflow-y: auto" id="targetLanguageDropdown">
+                        <li class="dropdown-item curserPointer"
+                            onclick="setLanguage('detect','Select Language','target')">
+                            Select Language
+                        </li>
+                    </div>
+                </ul>
             </div>
-        </ul>
+        </div>
+        <div class="col-1">
+            <i class="bi bi-copy copyIcon" title="copy" onclick="copyFromDiv('translationArea');"></i>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-12 mt-2 mb-3 mb-lg-0">
+        <textarea name="" id="translationArea" rows="14" class="form-control"></textarea>
     </div>
 </div>
 
-<div class="col-5 mt-2">
-    <!-- <input type="text" class="form-control d-grid input_bg_color" placeholder="Type what you want to summerise..." > -->
-    <textarea name="" id="userTextArea" rows="14" class="form-control newArea" placeholder="Type what you want to Translate..." onkeyup="aiTranslate();"></textarea>
-</div>
-<div class="col-5 mt-2">
-    <textarea name="" id="translationArea" rows="14" class="form-control"></textarea>
-</div>
