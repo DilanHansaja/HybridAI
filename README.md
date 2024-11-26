@@ -9,6 +9,7 @@
         <li><a href="#overview" style="color: #2980b9; text-decoration: none;">Overview</a></li>
         <li><a href="#features" style="color: #2980b9; text-decoration: none;">Features</a></li>
         <li><a href="#technologies-used" style="color: #2980b9; text-decoration: none;">Technologies Used</a></li>
+         <li><a href="#demo" style="color: #2980b9; text-decoration: none;">Live Demo</a></li>
         <li><a href="#installation" style="color: #2980b9; text-decoration: none;">Installation</a></li>
         <li><a href="#usage" style="color: #2980b9; text-decoration: none;">Usage</a></li>
         <li><a href="#license" style="color: #2980b9; text-decoration: none;">License</a></li>
@@ -27,6 +28,15 @@
         <li><strong>Libraries:</strong> Bootstrap for styling</li>
         <li><strong>AI APIs:</strong> Integrated APIs for NLP functionalities</li>
     </ul>
+    <div style="font-family: Arial, sans-serif; margin-top: 20px;">
+    <h3 id="demo" style="color: #2980b9; font-size: 1.4em; margin-bottom: 10px;">Live Demo</h3>
+    <p style="font-size: 1.1em; line-height: 1.5; margin-bottom: 10px;">
+        You can try out the HybridAI project live by visiting the following link:
+    </p>
+    <a href="https://dilanhansaja.github.io/HybridAi/" target="_blank" style="font-size: 1.2em; color: #3498db; text-decoration: none; font-weight: bold;">
+        HybridAI Live Demo
+    </a>
+</div>
     <h2 id="installation" style="color: #34495e; border-bottom: 2px solid #ddd; padding-bottom: 5px;">Installation</h2>
     <ol style="margin-left: 20px;">
         <li>Clone the repository:
