@@ -29,7 +29,7 @@
         <li><strong>AI APIs:</strong> Integrated APIs for NLP functionalities</li>
     </ul>
     <div style="font-family: Arial, sans-serif; margin-top: 20px;">
-    <h3 id="demo" style="color: #2980b9; font-size: 1.4em; margin-bottom: 10px;">Live Demo</h3>
+    <h2 id="demo" style="color: #2980b9; font-size: 1.4em; margin-bottom: 10px;">Live Demo</h2>
     <p style="font-size: 1.1em; line-height: 1.5; margin-bottom: 10px;">
         You can try out the HybridAI project live by visiting the following link:
     </p>
