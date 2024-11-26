@@ -33,7 +33,7 @@
     <p style="font-size: 1.1em; line-height: 1.5; margin-bottom: 10px;">
         You can try out the HybridAI project live by visiting the following link:
     </p>
-    <a href="https://dilanhansaja.github.io/HybridAi/" target="_blank" style="font-size: 1.2em; color: #3498db; text-decoration: none; font-weight: bold;">
+    <a href="https://dilanhansaja.github.io/HybridAi/" target="blank" style="font-size: 1.2em; color: #3498db; text-decoration: none; font-weight: bold;">
         HybridAI Live Demo
     </a>
 </div>
