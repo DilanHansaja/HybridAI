@@ -68,5 +68,5 @@ document.getElementById('pasteButton').addEventListener('click', async () => {
     <h2 id="usage" style="color: #34495e; border-bottom: 2px solid #ddd; padding-bottom: 5px;">Usage</h2>
     <p>Open the respective HTML files (<code>chat.html</code>, <code>summarizer.html</code>, <code>translate.html</code>) for different features. Interact with the tools to explore AI-driven functionalities.</p>
     <h2 id="license" style="color: #34495e; border-bottom: 2px solid #ddd; padding-bottom: 5px;">License</h2>
-    <p>This project is licensed under the <a href="LICENSE" style="color: #2980b9; text-decoration: none;">Unlicense</a>, making it free for public use.</p>
+    <p>This project is licensed under the <a href="LICENSE" style="color: #2980b9; text-decoration: none;">MIT License</a>, making it free for public use.</p>
 </body>
