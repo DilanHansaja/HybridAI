@@ -37,6 +37,34 @@
         </li>
         <li>Open <code>index.html</code> in a web browser to launch the app.</li>
     </ol>
+<div style="font-family: Arial, sans-serif; margin: 20px;">
+    <h2 style="color: #2980b9; font-size: 1.6em; margin-bottom: 10px;">New Feature: Paste Text from Clipboard</h2>
+    <p style="font-size: 1.1em; line-height: 1.5; margin-bottom: 10px;">
+        This feature enables users to paste clipboard content into a text area with the click of a button.
+    </p>
+    <h3 style="font-size: 1.2em; color: #34495e;">How It Works:</h3>
+    <ul style="font-size: 1.1em; margin-bottom: 10px;">
+        <li>Copy any text to your clipboard.</li>
+        <li>Click the 📋 <strong>Paste</strong> button in the app.</li>
+        <li>The text is pasted directly into the text area using the Clipboard API.</li>
+    </ul>
+    <h3 style="font-size: 1.2em; color: #34495e;">Code Snippet:</h3>
+    <pre style="background-color: #f4f4f4; padding: 10px; border: 1px solid #ccc; font-family: Courier, monospace; font-size: 1em; margin-bottom: 20px;">
+        <code>
+document.getElementById('pasteButton').addEventListener('click', async () => {
+    try {
+        const text = await navigator.clipboard.readText();
+        document.getElementById('textArea').value = text;
+    } catch (err) {
+        alert('Failed to paste text: ' + err);
+    }
+});
+        </code>
+    </pre>
+    <p style="font-size: 1.1em; line-height: 1.5;">
+        Ensure clipboard permissions are enabled and run on a secure (HTTPS) environment.
+    </p>
+</div>
     <h2 id="usage" style="color: #34495e; border-bottom: 2px solid #ddd; padding-bottom: 5px;">Usage</h2>
     <p>Open the respective HTML files (<code>chat.html</code>, <code>summarizer.html</code>, <code>translate.html</code>) for different features. Interact with the tools to explore AI-driven functionalities.</p>
     <h2 id="license" style="color: #34495e; border-bottom: 2px solid #ddd; padding-bottom: 5px;">License</h2>
